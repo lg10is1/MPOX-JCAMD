@@ -1,0 +1,118 @@
+A35R-MMPBSA-Public/
+|-- example_inputs
+|   +-- drugs3003_rep1
+|       |-- complex_ref_protein_ligand.pdb
+|       |-- mmpbsa_decomp_gb.in
+|       |-- mmpbsa_gb_pb_prod.in
+|       |-- mmpbsa_gb_prod.in
+|       |-- mmpbsa_gb_prod_pbr3.in
+|       |-- mmpbsa_gb_test.in
+|       |-- mmpbsa_gb_test_debug.in
+|       |-- mmpbsa_gb_test_debug_pbr3.in
+|       |-- mmpbsa_index.ndx
+|       |-- posre_Backbone.itp
+|       |-- posre_Ligand_Heavy.itp
+|       |-- posre_Protein.itp
+|       |-- posre_Protein_Ligand.itp
+|       |-- README_MMPBSA_INPUTS.txt
+|       |-- run1.sh
+|       +-- topol.top
+|-- figures
+|   +-- mmpbsa
+|       |-- mmpbsa_delta_total_summary.pdf
+|       |-- mmpbsa_delta_total_summary.png
+|       |-- mmpbsa_delta_total_summary.svg
+|       |-- mmpbsa_energy_decomposition.pdf
+|       |-- mmpbsa_energy_decomposition.png
+|       +-- mmpbsa_energy_decomposition.svg
+|-- results
+|   |-- example_drugs3003_rep1
+|   |   |-- FINAL_RESULTS_MMPBSA_GB.csv
+|   |   +-- FINAL_RESULTS_MMPBSA_GB.dat
+|   |-- figure_tables
+|   |   |-- md_all_timeseries_long.csv
+|   |   |-- md_missing_or_unreadable_files.csv
+|   |   |-- md_summary_by_rep.csv
+|   |   |-- md_summary_by_system_metric.csv
+|   |   |-- mmpbsa_delta_summary_by_system.csv
+|   |   |-- mmpbsa_delta_terms_by_rep_long.csv
+|   |   +-- mmpbsa_delta_total_summary.csv
+|   |-- summary_delta_fixed
+|   |   |-- mmpbsa_delta_summary_by_system.csv
+|   |   |-- mmpbsa_delta_terms_by_rep_long.csv
+|   |   |-- mmpbsa_delta_terms_by_rep_wide.csv
+|   |   +-- mmpbsa_delta_total_summary.csv
+|   |-- summary_pbradii3
+|   |   |-- mmpbsa_gb_delta_total_summary.csv
+|   |   |-- mmpbsa_gb_summary_by_system.csv
+|   |   +-- mmpbsa_gb_terms_by_rep.csv
+|   +-- summary_robust
+|       |-- mmpbsa_gb_delta_total_summary_robust.csv
+|       |-- mmpbsa_gb_summary_by_system_robust.csv
+|       |-- mmpbsa_gb_terms_by_rep_robust.csv
+|       +-- mmpbsa_parse_warnings.csv
+|-- workflow
+|   |-- collect_parse
+|   |   |-- 21_make_clean_mmpbsa_index.py
+|   |   |-- 27_collect_gmx_mmpbsa_results.py
+|   |   |-- 27D_collect_gmx_mmpbsa_delta_total.py
+|   |   |-- 27F_collect_gmx_mmpbsa_pbradii3_results.py
+|   |   |-- 27G_collect_gmx_mmpbsa_results_robust.py
+|   |   |-- 27H_collect_gmx_mmpbsa_delta_section.py
+|   |   +-- 28_visualize_gmx_mmpbsa_nature.py
+|   |-- debug_scripts
+|   |   |-- 22_test_gmx_mmpbsa_one.slurm
+|   |   |-- 22_test_gmx_mmpbsa_one_siyuan.slurm
+|   |   |-- 22_test_gmx_mmpbsa_one_siyuan_debug.slurm
+|   |   |-- 22A_diagnose_mmpbsa_failure.sh
+|   |   |-- 22B_test_siyuan_run1_visibility_bindfix.slurm
+|   |   |-- 22C_find_gmx_mmpbsa_container.sh
+|   |   |-- 22C_make_direct_gmx_mmpbsa_scripts.sh
+|   |   |-- 22D_test_gmx_mmpbsa_direct_serial_debug.slurm
+|   |   |-- 22F_make_pbradii_fixed_gmx_mmpbsa_scripts.sh
+|   |   +-- 22F_test_gmx_mmpbsa_direct_serial_debug_pbradii3.slurm
+|   |-- environment_check
+|   |   |-- 20_check_gmx_mmpbsa_env.sh
+|   |   |-- 20_check_gmx_mmpbsa_siyuan_module.sh
+|   |   |-- 20_fix_gmx_mmpbsa_siyuan_container.sh
+|   |   |-- 20_make_gmx_mmpbsa_workflow.sh
+|   |   |-- 20A_create_conda_env_gmxMMPBSA.sh
+|   |   |-- 21_prepare_gmx_mmpbsa_inputs.sh
+|   |   |-- 21_prepare_gmx_mmpbsa_inputs_v2.sh
+|   |   |-- 22A_diagnose_mmpbsa_failure.sh
+|   |   |-- 22C_find_gmx_mmpbsa_container.sh
+|   |   |-- 22C_make_direct_gmx_mmpbsa_scripts.sh
+|   |   |-- 22F_make_pbradii_fixed_gmx_mmpbsa_scripts.sh
+|   |   |-- 24D_check_gmx_mmpbsa_direct_outputs.sh
+|   |   |-- 24F_check_gmx_mmpbsa_pbradii3_outputs.sh
+|   |   +-- 26_check_gmx_mmpbsa_outputs.sh
+|   |-- input_templates
+|   |   +-- run1.sh
+|   |-- prepare_inputs
+|   |   |-- 21_prepare_gmx_mmpbsa_inputs.sh
+|   |   +-- 21_prepare_gmx_mmpbsa_inputs_v2.sh
+|   |-- slurm_run_scripts
+|   |   |-- 22_test_gmx_mmpbsa_one.slurm
+|   |   |-- 22_test_gmx_mmpbsa_one_siyuan.slurm
+|   |   |-- 22_test_gmx_mmpbsa_one_siyuan_debug.slurm
+|   |   |-- 22D_test_gmx_mmpbsa_direct_serial_debug.slurm
+|   |   |-- 22F_test_gmx_mmpbsa_direct_serial_debug_pbradii3.slurm
+|   |   |-- 23_gmx_mmpbsa_array_gb.slurm
+|   |   |-- 23_gmx_mmpbsa_array_gb_siyuan.slurm
+|   |   |-- 23D_gmx_mmpbsa_array_gb_direct_serial.slurm
+|   |   |-- 23F_gmx_mmpbsa_array_gb_direct_serial_pbradii3.slurm
+|   |   |-- 24_gmx_mmpbsa_array_gb_pb.slurm
+|   |   |-- 24_gmx_mmpbsa_array_gbpb_siyuan.slurm
+|   |   |-- 24D_check_gmx_mmpbsa_direct_outputs.sh
+|   |   |-- 24F_check_gmx_mmpbsa_pbradii3_outputs.sh
+|   |   |-- 25_gmx_mmpbsa_array_decomp_gb.slurm
+|   |   |-- 25_gmx_mmpbsa_array_decomp_gb_siyuan.slurm
+|   |   +-- 26_check_gmx_mmpbsa_outputs.sh
+|   +-- visualization
+|       |-- 28_extract_top_decomp_residues.py
+|       +-- 28_visualize_gmx_mmpbsa_nature.py
+|-- .gitignore
+|-- environment.yml
+|-- README.md
+|-- REPRODUCIBILITY.md
++-- setup_env.sh

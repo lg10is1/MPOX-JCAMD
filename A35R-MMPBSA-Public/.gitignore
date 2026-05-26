@@ -1,0 +1,35 @@
+# Large molecular-dynamics files and generated runtime outputs
+*.xtc
+*.trr
+*.tpr
+*.edr
+*.log
+*.cpt
+*.trj
+*.nc
+*.dcd
+*.zip
+*.tar
+*.tar.gz
+*.sif
+
+# gmx_MMPBSA temporary/generated topology and scratch files
+_GMXMMPBSA_*
+GMXMMPBSA_*
+COM.prmtop
+REC.prmtop
+LIG.prmtop
+COM.inpcrd
+REC.inpcrd
+LIG.inpcrd
+*.mdout
+
+# Local and scheduler artifacts
+tmp*
+*backup*
+*.out
+*.err
+*.path
+.DS_Store
+__pycache__/
+*.pyc

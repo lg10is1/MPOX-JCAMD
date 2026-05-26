@@ -1,0 +1,12 @@
+system,rep,reason,dat,csv
+drugs2263,rep1,Terms parsed but DELTA_TOTAL not found,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs2263/rep1/FINAL_RESULTS_MMPBSA_GB.dat,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs2263/rep1/FINAL_RESULTS_MMPBSA_GB.csv
+drugs2263,rep2,Terms parsed but DELTA_TOTAL not found,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs2263/rep2/FINAL_RESULTS_MMPBSA_GB.dat,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs2263/rep2/FINAL_RESULTS_MMPBSA_GB.csv
+drugs2263,rep3,Terms parsed but DELTA_TOTAL not found,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs2263/rep3/FINAL_RESULTS_MMPBSA_GB.dat,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs2263/rep3/FINAL_RESULTS_MMPBSA_GB.csv
+drugs3003,rep1,Terms parsed but DELTA_TOTAL not found,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3003/rep1/FINAL_RESULTS_MMPBSA_GB.dat,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3003/rep1/FINAL_RESULTS_MMPBSA_GB.csv
+drugs3003,rep2,Terms parsed but DELTA_TOTAL not found,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3003/rep2/FINAL_RESULTS_MMPBSA_GB.dat,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3003/rep2/FINAL_RESULTS_MMPBSA_GB.csv
+drugs3003,rep3,Terms parsed but DELTA_TOTAL not found,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3003/rep3/FINAL_RESULTS_MMPBSA_GB.dat,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3003/rep3/FINAL_RESULTS_MMPBSA_GB.csv
+drugs3523,rep1,Terms parsed but DELTA_TOTAL not found,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3523/rep1/FINAL_RESULTS_MMPBSA_GB.dat,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3523/rep1/FINAL_RESULTS_MMPBSA_GB.csv
+drugs3523,rep2,Terms parsed but DELTA_TOTAL not found,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3523/rep2/FINAL_RESULTS_MMPBSA_GB.dat,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3523/rep2/FINAL_RESULTS_MMPBSA_GB.csv
+drugs3523,rep3,Terms parsed but DELTA_TOTAL not found,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3523/rep3/FINAL_RESULTS_MMPBSA_GB.dat,<PROJECT_ROOT>/gmx_mmpbsa_50_100ns/drugs3523/rep3/FINAL_RESULTS_MMPBSA_GB.csv
+
+

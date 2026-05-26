@@ -1,0 +1,18 @@
+&general
+  sys_name="drugs3003_rep1_GB_PB_50_100ns",
+  startframe=1,
+  endframe=9999999,
+  interval=1,
+  verbose=2,
+  keep_files=0,
+/
+&gb
+  igb=5,
+  saltcon=0.150,
+/
+&pb
+  istrng=0.150,
+  fillratio=4.0,
+/
+
+

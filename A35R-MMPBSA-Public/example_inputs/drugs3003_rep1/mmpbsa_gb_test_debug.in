@@ -1,0 +1,15 @@
+&general
+  sys_name="drugs3003_rep1_GB_debug",
+  startframe=1,
+  endframe=3,
+  interval=1,
+  verbose=3,
+  keep_files=2,
+  PBRadii=mbondi2,
+/
+&gb
+  igb=5,
+  saltcon=0.150,
+/
+
+
