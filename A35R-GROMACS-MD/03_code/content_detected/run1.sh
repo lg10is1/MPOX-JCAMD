@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+cd "<PROJECT_ROOT>/gromacs-runs/gmx_mmpbsa_50_100ns/drugs3003/rep1"
+exec ./run1.sh

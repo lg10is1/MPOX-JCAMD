@@ -1,0 +1,45 @@
+System: drugs2263
+Input prmtop: <PROJECT_ROOT>/gromacs-runs/systems/drugs2263/complex_solvated.prmtop
+Input inpcrd: <PROJECT_ROOT>/gromacs-runs/systems/drugs2263/complex_solvated.inpcrd
+Output topol.top: <PROJECT_ROOT>/gromacs-runs/gromacs_systems/drugs2263/topol.top
+Output conf.gro: <PROJECT_ROOT>/gromacs-runs/gromacs_systems/drugs2263/conf.gro
+
+Amber summary before conversion
+  n_atoms: 131382
+  n_residues: 43041
+  total_charge: -1.367555686471178e-07
+  total_charge_rounded: 0
+  charge_abs_diff_from_integer: 1.367555686471178e-07
+  residue_atom_counts: {'MET': 104, 'THR': 225, 'PRO': 42, 'GLU': 120, 'ASN': 112, 'ASP': 156, 'GLN': 119, 'SER': 253, 'VAL': 208, 'PHE': 80, 'ALA': 140, 'TYR': 189, 'GLY': 49, 'LYS': 264, 'ILE': 209, 'ARG': 144, 'LEU': 190, 'CYS': 22, 'HIE': 34, 'CYX': 40, 'HID': 17, 'TRP': 48, 'LIG': 52, 'Na+': 6, 'WAT': 128559}
+  n_protein_atoms: 2765
+  n_backbone_atoms: 725
+  n_ligand_atoms: 58
+  n_ligand_heavy_atoms: 39
+  n_water_atoms: 128559
+  n_ion_atoms: 0
+  n_nonwater_atoms: 2823
+
+GROMACS reloaded summary
+  n_atoms: 131382
+  n_residues: 43041
+  total_charge: -4.085620730620576e-14
+  total_charge_rounded: 0
+  charge_abs_diff_from_integer: 4.085620730620576e-14
+  residue_atom_counts: {'MET': 104, 'THR': 225, 'PRO': 42, 'GLU': 120, 'ASN': 112, 'ASP': 156, 'GLN': 119, 'SER': 253, 'VAL': 208, 'PHE': 80, 'ALA': 140, 'TYR': 189, 'GLY': 49, 'LYS': 264, 'ILE': 209, 'ARG': 144, 'LEU': 190, 'CYS': 22, 'HIE': 34, 'CYX': 40, 'HID': 17, 'TRP': 48, 'LIG': 52, 'Na+': 6, 'WAT': 128559}
+  n_protein_atoms: 2765
+  n_backbone_atoms: 725
+  n_ligand_atoms: 58
+  n_ligand_heavy_atoms: 39
+  n_water_atoms: 128559
+  n_ion_atoms: 0
+  n_nonwater_atoms: 2823
+
+Validation
+  atom_count_match: True
+  charge_difference_after_reload: 1.36755527791e-07
+
+Important notes
+  - ParmEd conversion keeps the Amber-derived force-field parameters in the exported GROMACS topology.
+  - Position restraint files are generated for convenience but are not automatically inserted into topol.top.
+  - Equilibration scripts below use unrestrained NVT/NPT by default for maximum compatibility after Amber-to-GROMACS conversion.
+  - If you want restraints, inspect topol.top carefully and insert the posre include under the correct moleculetype.

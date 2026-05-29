@@ -1,0 +1,10 @@
+Excluded from the public code/results package:
+- Raw and processed trajectories: *.xtc, *.trr
+- Binary run files and checkpoints: *.tpr, *.edr, *.cpt
+- Large coordinate/topology/index files: *.gro, *.top, *.ndx, *.itp
+- Full GROMACS logs: *.log
+- Raw XVG files with command/path headers: *.xvg
+- Optional trajectory archive folder: 11_optional_trajectories
+
+These files were omitted because they are very large, environment-specific, or contain private filesystem/cluster metadata.
+The analysis code, parameter files, summarized CSV tables, per-replicate CSV exports, and figure files are retained.

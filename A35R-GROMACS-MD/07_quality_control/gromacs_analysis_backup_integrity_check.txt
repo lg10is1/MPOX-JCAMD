@@ -1,0 +1,356 @@
+============================================================
+[INFO] GROMACS analysis backup integrity check
+============================================================
+[INFO] ROOT=<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231
+[INFO] Date=Tue May 26 13:53:56 CST 2026
+[INFO] Host=<COMPUTE_NODE>
+
+============================================================
+[1] Basic folder check
+============================================================
+[OK] 00_project_overview
+[OK] 01_gromacs_input_systems
+[OK] 02_short_test_results
+[OK] 03_100ns_md_metadata
+[OK] 04_100ns_md_logs
+[OK] 05_100ns_final_structures
+[OK] 06_per_rep_analysis_outputs
+[OK] 07_combined_analysis_tables
+[OK] 08_md_figures
+[OK] 09_scripts
+[OK] 10_quality_control
+[OK] 99_manifest
+
+============================================================
+[2] 100 ns MD logs
+============================================================
+drugs2263  rep1  FINISHED Performance_ns_per_day=225.188
+drugs2263  rep2  FINISHED Performance_ns_per_day=230.076
+drugs2263  rep3  FINISHED Performance_ns_per_day=223.618
+drugs3003  rep1  FINISHED Performance_ns_per_day=223.988
+drugs3003  rep2  FINISHED Performance_ns_per_day=227.380
+drugs3003  rep3  FINISHED Performance_ns_per_day=226.809
+drugs3523  rep1  FINISHED Performance_ns_per_day=229.155
+drugs3523  rep2  FINISHED Performance_ns_per_day=214.524
+drugs3523  rep3  FINISHED Performance_ns_per_day=227.187
+
+============================================================
+[3] Dangerous keyword scan in MD logs
+============================================================
+No obvious dangerous keywords found in copied MD logs.
+
+============================================================
+[4] Per-replicate analysis files
+============================================================
+drugs2263  rep1  csv=9 xvg=9 pdf=0
+drugs2263  rep2  csv=9 xvg=9 pdf=0
+drugs2263  rep3  csv=9 xvg=9 pdf=0
+drugs3003  rep1  csv=9 xvg=9 pdf=0
+drugs3003  rep2  csv=9 xvg=9 pdf=0
+drugs3003  rep3  csv=9 xvg=9 pdf=0
+drugs3523  rep1  csv=9 xvg=9 pdf=0
+drugs3523  rep2  csv=9 xvg=9 pdf=0
+drugs3523  rep3  csv=9 xvg=9 pdf=0
+
+============================================================
+[5] Combined tables
+============================================================
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/gmx_analysis_summary/combined_contacts_prot_lig.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/gmx_analysis_summary/combined_gyrate_protein.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/gmx_analysis_summary/combined_hbond_prot_lig.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/gmx_analysis_summary/combined_mindist_prot_lig.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/gmx_analysis_summary/combined_rmsd_backbone.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/gmx_analysis_summary/combined_rmsd_ligand_heavy.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/gmx_analysis_summary/combined_rmsf_backbone_residue.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/gmx_analysis_summary/summary_by_system_metric.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/gmx_analysis_summary/summary_table.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/nature_figures_csv/md_all_timeseries_long.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/nature_figures_csv/md_missing_or_unreadable_files.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/nature_figures_csv/md_summary_by_rep.csv
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/07_combined_analysis_tables/nature_figures_csv/md_summary_by_system_metric.csv
+
+============================================================
+[6] MD figure files
+============================================================
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep1/contacts_prot_lig_drugs2263_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep1/gyrate_protein_drugs2263_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep1/hbond_prot_lig_drugs2263_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep1/mindist_prot_lig_drugs2263_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep1/rmsd_backbone_drugs2263_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep1/rmsd_ligand_heavy_drugs2263_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep1/rmsf_backbone_residue_drugs2263_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep2/contacts_prot_lig_drugs2263_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep2/gyrate_protein_drugs2263_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep2/hbond_prot_lig_drugs2263_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep2/mindist_prot_lig_drugs2263_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep2/rmsd_backbone_drugs2263_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep2/rmsd_ligand_heavy_drugs2263_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep2/rmsf_backbone_residue_drugs2263_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep3/contacts_prot_lig_drugs2263_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep3/gyrate_protein_drugs2263_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep3/hbond_prot_lig_drugs2263_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep3/mindist_prot_lig_drugs2263_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep3/rmsd_backbone_drugs2263_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep3/rmsd_ligand_heavy_drugs2263_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs2263/rep3/rmsf_backbone_residue_drugs2263_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep1/contacts_prot_lig_drugs3003_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep1/gyrate_protein_drugs3003_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep1/hbond_prot_lig_drugs3003_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep1/mindist_prot_lig_drugs3003_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep1/rmsd_backbone_drugs3003_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep1/rmsd_ligand_heavy_drugs3003_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep1/rmsf_backbone_residue_drugs3003_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep2/contacts_prot_lig_drugs3003_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep2/gyrate_protein_drugs3003_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep2/hbond_prot_lig_drugs3003_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep2/mindist_prot_lig_drugs3003_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep2/rmsd_backbone_drugs3003_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep2/rmsd_ligand_heavy_drugs3003_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep2/rmsf_backbone_residue_drugs3003_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep3/contacts_prot_lig_drugs3003_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep3/gyrate_protein_drugs3003_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep3/hbond_prot_lig_drugs3003_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep3/mindist_prot_lig_drugs3003_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep3/rmsd_backbone_drugs3003_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep3/rmsd_ligand_heavy_drugs3003_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3003/rep3/rmsf_backbone_residue_drugs3003_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep1/contacts_prot_lig_drugs3523_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep1/gyrate_protein_drugs3523_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep1/hbond_prot_lig_drugs3523_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep1/mindist_prot_lig_drugs3523_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep1/rmsd_backbone_drugs3523_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep1/rmsd_ligand_heavy_drugs3523_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep1/rmsf_backbone_residue_drugs3523_rep1.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep2/contacts_prot_lig_drugs3523_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep2/gyrate_protein_drugs3523_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep2/hbond_prot_lig_drugs3523_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep2/mindist_prot_lig_drugs3523_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep2/rmsd_backbone_drugs3523_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep2/rmsd_ligand_heavy_drugs3523_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep2/rmsf_backbone_residue_drugs3523_rep2.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep3/contacts_prot_lig_drugs3523_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep3/gyrate_protein_drugs3523_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep3/hbond_prot_lig_drugs3523_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep3/mindist_prot_lig_drugs3523_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep3/rmsd_backbone_drugs3523_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep3/rmsd_ligand_heavy_drugs3523_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_each_rep_single_panel/drugs3523/rep3/rmsf_backbone_residue_drugs3523_rep3.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/contacts_prot_lig_summary.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/contacts_prot_lig_summary.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/contacts_prot_lig_summary.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/gyrate_protein_summary.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/gyrate_protein_summary.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/gyrate_protein_summary.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/hbond_prot_lig_summary.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/hbond_prot_lig_summary.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/hbond_prot_lig_summary.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/mindist_prot_lig_summary.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/mindist_prot_lig_summary.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/mindist_prot_lig_summary.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/rmsd_backbone_summary.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/rmsd_backbone_summary.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/rmsd_backbone_summary.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/rmsd_ligand_heavy_summary.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/rmsd_ligand_heavy_summary.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/rmsd_ligand_heavy_summary.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/rmsf_backbone_residue_summary.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/rmsf_backbone_residue_summary.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_summary_bars/rmsf_backbone_residue_summary.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/contacts_prot_lig_drugs2263_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/contacts_prot_lig_drugs3003_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/contacts_prot_lig_drugs3523_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/gyrate_protein_drugs2263_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/gyrate_protein_drugs3003_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/gyrate_protein_drugs3523_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/hbond_prot_lig_drugs2263_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/hbond_prot_lig_drugs3003_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/hbond_prot_lig_drugs3523_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/mindist_prot_lig_drugs2263_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/mindist_prot_lig_drugs3003_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/mindist_prot_lig_drugs3523_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/rmsd_backbone_drugs2263_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/rmsd_backbone_drugs3003_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/rmsd_backbone_drugs3523_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/rmsd_ligand_heavy_drugs2263_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/rmsd_ligand_heavy_drugs3003_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/rmsd_ligand_heavy_drugs3523_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/rmsf_backbone_residue_drugs2263_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/rmsf_backbone_residue_drugs3003_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_pdf/md_three_reps_separate_panels/rmsf_backbone_residue_drugs3523_three_reps_separate_panels.pdf
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep1/contacts_prot_lig_drugs2263_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep1/gyrate_protein_drugs2263_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep1/hbond_prot_lig_drugs2263_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep1/mindist_prot_lig_drugs2263_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep1/rmsd_backbone_drugs2263_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep1/rmsd_ligand_heavy_drugs2263_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep1/rmsf_backbone_residue_drugs2263_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep2/contacts_prot_lig_drugs2263_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep2/gyrate_protein_drugs2263_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep2/hbond_prot_lig_drugs2263_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep2/mindist_prot_lig_drugs2263_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep2/rmsd_backbone_drugs2263_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep2/rmsd_ligand_heavy_drugs2263_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep2/rmsf_backbone_residue_drugs2263_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep3/contacts_prot_lig_drugs2263_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep3/gyrate_protein_drugs2263_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep3/hbond_prot_lig_drugs2263_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep3/mindist_prot_lig_drugs2263_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep3/rmsd_backbone_drugs2263_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep3/rmsd_ligand_heavy_drugs2263_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs2263/rep3/rmsf_backbone_residue_drugs2263_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep1/contacts_prot_lig_drugs3003_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep1/gyrate_protein_drugs3003_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep1/hbond_prot_lig_drugs3003_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep1/mindist_prot_lig_drugs3003_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep1/rmsd_backbone_drugs3003_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep1/rmsd_ligand_heavy_drugs3003_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep1/rmsf_backbone_residue_drugs3003_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep2/contacts_prot_lig_drugs3003_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep2/gyrate_protein_drugs3003_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep2/hbond_prot_lig_drugs3003_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep2/mindist_prot_lig_drugs3003_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep2/rmsd_backbone_drugs3003_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep2/rmsd_ligand_heavy_drugs3003_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep2/rmsf_backbone_residue_drugs3003_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep3/contacts_prot_lig_drugs3003_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep3/gyrate_protein_drugs3003_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep3/hbond_prot_lig_drugs3003_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep3/mindist_prot_lig_drugs3003_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep3/rmsd_backbone_drugs3003_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep3/rmsd_ligand_heavy_drugs3003_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3003/rep3/rmsf_backbone_residue_drugs3003_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep1/contacts_prot_lig_drugs3523_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep1/gyrate_protein_drugs3523_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep1/hbond_prot_lig_drugs3523_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep1/mindist_prot_lig_drugs3523_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep1/rmsd_backbone_drugs3523_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep1/rmsd_ligand_heavy_drugs3523_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep1/rmsf_backbone_residue_drugs3523_rep1.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep2/contacts_prot_lig_drugs3523_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep2/gyrate_protein_drugs3523_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep2/hbond_prot_lig_drugs3523_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep2/mindist_prot_lig_drugs3523_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep2/rmsd_backbone_drugs3523_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep2/rmsd_ligand_heavy_drugs3523_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep2/rmsf_backbone_residue_drugs3523_rep2.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep3/contacts_prot_lig_drugs3523_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep3/gyrate_protein_drugs3523_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep3/hbond_prot_lig_drugs3523_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep3/mindist_prot_lig_drugs3523_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep3/rmsd_backbone_drugs3523_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep3/rmsd_ligand_heavy_drugs3523_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_each_rep_single_panel/drugs3523/rep3/rmsf_backbone_residue_drugs3523_rep3.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/contacts_prot_lig_drugs2263_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/contacts_prot_lig_drugs3003_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/contacts_prot_lig_drugs3523_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/gyrate_protein_drugs2263_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/gyrate_protein_drugs3003_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/gyrate_protein_drugs3523_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/hbond_prot_lig_drugs2263_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/hbond_prot_lig_drugs3003_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/hbond_prot_lig_drugs3523_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/mindist_prot_lig_drugs2263_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/mindist_prot_lig_drugs3003_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/mindist_prot_lig_drugs3523_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/rmsd_backbone_drugs2263_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/rmsd_backbone_drugs3003_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/rmsd_backbone_drugs3523_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/rmsd_ligand_heavy_drugs2263_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/rmsd_ligand_heavy_drugs3003_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/rmsd_ligand_heavy_drugs3523_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/rmsf_backbone_residue_drugs2263_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/rmsf_backbone_residue_drugs3003_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_png/md_three_reps_separate_panels/rmsf_backbone_residue_drugs3523_three_reps_separate_panels.png
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep1/contacts_prot_lig_drugs2263_rep1.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep1/gyrate_protein_drugs2263_rep1.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep1/hbond_prot_lig_drugs2263_rep1.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep1/mindist_prot_lig_drugs2263_rep1.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep1/rmsd_backbone_drugs2263_rep1.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep1/rmsd_ligand_heavy_drugs2263_rep1.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep1/rmsf_backbone_residue_drugs2263_rep1.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep2/contacts_prot_lig_drugs2263_rep2.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep2/gyrate_protein_drugs2263_rep2.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep2/hbond_prot_lig_drugs2263_rep2.svg
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/08_md_figures/figures_svg/md_each_rep_single_panel/drugs2263/rep2/mindist_prot_lig_drugs2263_rep2.svg
+
+============================================================
+[7] Script files
+============================================================
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/analysis_slurm/06_gromacs_100ns_3rep_cpu_array.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/check_scripts/14_check_gromacs_analysis_outputs.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/check_scripts/15_convert_all_xvg_to_csv.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/collect_plot_python/08_collect_plot_gromacs_results.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/00_prepare_clean_A35R_gromacs.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/01_check_cpu_gromacs_module.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/02_convert_amber_to_gromacs_parmed.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/03_make_gromacs_mdp_cpu.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/04_test_gromacs_cpu_one.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/05_test_gromacs_cpu_array.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/06_gromacs_100ns_3rep_cpu_array.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/07_gromacs_analysis_cpu_array.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/08_collect_plot_gromacs_results.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/09_check_finished_and_extract_energy.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/10_fix_cpu_gromacs_dlb_and_mpi.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/11_check_gromacs_100ns_progress.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/12_estimate_realtime_speed.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/13_check_all_100ns_finished.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/14_check_gromacs_analysis_outputs.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/15_convert_all_xvg_to_csv.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/17_collect_plot_gromacs_results_robust.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/18_make_nature_split_figures_and_docs.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/18_plot_nature_split_gromacs.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/19_fix_and_replot_nature_split_figures.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/19_plot_nature_split_gromacs_fixed.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/20A_create_conda_env_gmxMMPBSA.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/20_check_gmx_mmpbsa_env.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/20_check_gmx_mmpbsa_siyuan_module.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/20_fix_gmx_mmpbsa_siyuan_container.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/20_make_gmx_mmpbsa_workflow.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/21_make_clean_mmpbsa_index.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/21_prepare_gmx_mmpbsa_inputs.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/21_prepare_gmx_mmpbsa_inputs_v2.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22A_diagnose_mmpbsa_failure.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22B_test_siyuan_run1_visibility_bindfix.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22C_find_gmx_mmpbsa_container.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22C_make_direct_gmx_mmpbsa_scripts.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22D_test_gmx_mmpbsa_direct_serial_debug.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22F_make_pbradii_fixed_gmx_mmpbsa_scripts.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22F_test_gmx_mmpbsa_direct_serial_debug_pbradii3.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22_test_gmx_mmpbsa_one_siyuan_debug.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22_test_gmx_mmpbsa_one_siyuan.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/22_test_gmx_mmpbsa_one.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/23D_gmx_mmpbsa_array_gb_direct_serial.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/23F_gmx_mmpbsa_array_gb_direct_serial_pbradii3.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/23_gmx_mmpbsa_array_gb_siyuan.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/23_gmx_mmpbsa_array_gb.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/24D_check_gmx_mmpbsa_direct_outputs.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/24F_check_gmx_mmpbsa_pbradii3_outputs.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/24_gmx_mmpbsa_array_gbpb_siyuan.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/24_gmx_mmpbsa_array_gb_pb.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/25_gmx_mmpbsa_array_decomp_gb_siyuan.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/25_gmx_mmpbsa_array_decomp_gb.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/26_check_gmx_mmpbsa_outputs.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/27_collect_gmx_mmpbsa_results.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/27D_collect_gmx_mmpbsa_delta_total.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/27F_collect_gmx_mmpbsa_pbradii3_results.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/27G_collect_gmx_mmpbsa_results_robust.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/27H_collect_gmx_mmpbsa_delta_section.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/28_extract_top_decomp_residues.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/28_visualize_gmx_mmpbsa_nature.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/30_make_clean_reviewer_release.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/32_copy_mmpbsa_codes_to_existing_backups.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/33_backup_gromacs_md_analysis.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/A35R_gromacs_cpu_master_create_scripts.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/.get_current_progress.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/run1.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/content_detected/scripts_convert_xvg_to_csv.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/nature_plotting/28_extract_top_decomp_residues.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/nature_plotting/28_visualize_gmx_mmpbsa_nature.py
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/production_slurm/05_test_gromacs_cpu_array.slurm
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/progress_check/11_check_gromacs_100ns_progress.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/progress_check/12_estimate_realtime_speed.sh
+<PROJECT_ROOT>/gromacs-runs-GROMACS-analysis-backup_20260526_134231/09_scripts/progress_check/13_check_all_100ns_finished.sh
+
+============================================================
+[DONE] Integrity check finished
+============================================================
