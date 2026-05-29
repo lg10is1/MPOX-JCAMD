@@ -227,7 +227,7 @@ if [[ "$PRECHECK_STATUS" -eq 0 ]]; then
   echo "[INFO] Container can already see RUNDIR. No extra bind is needed."
 else
   echo "[WARN] Container cannot see RUNDIR without bind. Use explicit bind."
-  BIND_ARGS=(--bind /dssg:/dssg --bind /tmp:/tmp)
+  BIND_ARGS=(--bind <CLUSTER_FS>:<CLUSTER_FS> --bind /tmp:/tmp)
 fi
 
 echo
@@ -489,7 +489,7 @@ if [[ "$PRECHECK_STATUS" -eq 0 ]]; then
   echo "[INFO] Container can already see RUNDIR. No extra bind is needed."
 else
   echo "[WARN] Container cannot see RUNDIR without bind. Use explicit bind."
-  BIND_ARGS=(--bind /dssg:/dssg --bind /tmp:/tmp)
+  BIND_ARGS=(--bind <CLUSTER_FS>:<CLUSTER_FS> --bind /tmp:/tmp)
 fi
 
 echo

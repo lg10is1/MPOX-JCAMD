@@ -1,7 +1,7 @@
 ;
 ;   File <PROJECT_ROOT>/gromacs_systems/drugs3003/topol.top  was generated
-;   By user: bioxsyy (1684)
-;   On host:<COMPUTE_NODE>.pi.sjtu.edu.cn 
+;   By user: <USER_NAME>
+;   On host:<CLUSTER_HOST>
 ;   At date:Fri. May  5 10:36:36 2026 
 ;
 ;   This is a standalone topology file

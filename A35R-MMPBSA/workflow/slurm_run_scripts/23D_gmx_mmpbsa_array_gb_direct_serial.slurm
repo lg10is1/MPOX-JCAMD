@@ -178,7 +178,7 @@ echo "[INFO] SIF=$SIF"
 echo "[INFO] RUNDIR=$RUNDIR"
 
 "$CTR" exec \
-  --bind /dssg:/dssg \
+  --bind <CLUSTER_FS>:<CLUSTER_FS> \
   --bind /tmp:/tmp \
   --env GMX_MMPBSA_RUNDIR="$RUNDIR" \
   "$SIF" \

@@ -1,0 +1,16 @@
+# Keep shell/HPC workflow files portable on Linux clusters.
+*.sh text eol=lf
+*.slurm text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.in text eol=lf
+
+# Treat common result/figure formats explicitly.
+*.csv text eol=lf
+*.tsv text eol=lf
+*.json text eol=lf
+*.png binary
+*.pdf binary
+*.svg text eol=lf

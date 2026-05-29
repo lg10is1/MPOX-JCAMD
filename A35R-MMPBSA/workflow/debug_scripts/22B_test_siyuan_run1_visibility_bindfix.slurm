@@ -79,7 +79,7 @@ echo "============================================================"
 echo "[3] Force consistent Apptainer/Singularity bind paths"
 echo "============================================================"
 
-BIND_LIST="/dssg:/dssg,$BASE:$BASE,$RUNDIR:$RUNDIR,/tmp:/tmp"
+BIND_LIST="<CLUSTER_FS>:<CLUSTER_FS>,$BASE:$BASE,$RUNDIR:$RUNDIR,/tmp:/tmp"
 
 export APPTAINER_BIND="$BIND_LIST"
 export SINGULARITY_BIND="$BIND_LIST"

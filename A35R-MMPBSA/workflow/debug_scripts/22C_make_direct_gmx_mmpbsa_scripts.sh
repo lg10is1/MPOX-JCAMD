@@ -145,7 +145,7 @@ echo "[7] Quick command visibility inside container"
 echo "============================================================"
 
 "$CTR" exec \
-  --bind /dssg:/dssg \
+  --bind <CLUSTER_FS>:<CLUSTER_FS> \
   "$SIF" \
   bash -lc '
     echo "[inside] PWD=$(pwd)"
@@ -366,7 +366,7 @@ echo "[INFO] SIF=$SIF"
 echo "[INFO] RUNDIR=$RUNDIR"
 
 "$CTR" exec \
-  --bind /dssg:/dssg \
+  --bind <CLUSTER_FS>:<CLUSTER_FS> \
   --bind /tmp:/tmp \
   --env GMX_MMPBSA_RUNDIR="$RUNDIR" \
   "$SIF" \
@@ -579,7 +579,7 @@ echo "[INFO] SIF=$SIF"
 echo "[INFO] RUNDIR=$RUNDIR"
 
 "$CTR" exec \
-  --bind /dssg:/dssg \
+  --bind <CLUSTER_FS>:<CLUSTER_FS> \
   --bind /tmp:/tmp \
   --env GMX_MMPBSA_RUNDIR="$RUNDIR" \
   "$SIF" \
