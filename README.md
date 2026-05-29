@@ -116,6 +116,3 @@ Suggested software references:
 1. Valdes-Tresanco, M. S.; Valdes-Tresanco, M. E.; Valiente, P. A.; Moreno, E. gmx_MMPBSA: A New Tool to Perform End-State Free Energy Calculations with GROMACS. *Journal of Chemical Theory and Computation* 2021, 17, 6281-6291. https://doi.org/10.1021/acs.jctc.1c00645
 2. Abraham, M. J.; et al. GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputers. *SoftwareX* 2015, 1-2, 19-25. https://doi.org/10.1016/j.softx.2015.06.001
 
-## License
-
-No explicit license file is currently included. Add a `LICENSE` file before broad public reuse if you want to define redistribution and reuse terms clearly.
