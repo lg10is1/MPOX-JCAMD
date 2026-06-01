@@ -1,0 +1,8 @@
+receptor = E8L.pdbqt
+
+center_x = -3.237
+center_y = 15.708
+center_z = -2.269
+size_x = 83.65
+size_y = 83.65
+size_z = 83.65

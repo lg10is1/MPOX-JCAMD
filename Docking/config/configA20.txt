@@ -1,0 +1,8 @@
+receptor = A20.pdbqt
+
+center_x = -4.656
+center_y = -6.775
+center_z = 0.0
+size_x = 76.65
+size_y = 76.65
+size_z = 76.65

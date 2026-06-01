@@ -44,3 +44,7 @@ tmp/
 *.tar.gz
 *.tgz
 *.7z
+
+# Public docking result release: keep one archive per target, not thousands of log files
+!Docking/docking results/*.zip
+Docking/docking results/*/
