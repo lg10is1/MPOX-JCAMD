@@ -9,7 +9,7 @@ This directory contains the public AutoDock Vina docking materials for the monke
 | `PDB/` | Receptor PDB files used during docking preparation. |
 | `pdbqt/` | Receptor PDBQT files used as AutoDock Vina receptor inputs. |
 | `config/` | Per-target AutoDock Vina configuration files defining the search space. |
-| `docking results/` | Packaged docking log archives, one `.zip` file per target. |
+| `docking_results/` | Packaged docking log archives, one `.zip` file per target. |
 
 ## Targets
 
