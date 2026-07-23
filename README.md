@@ -8,7 +8,7 @@ This repository supports public inspection and partial reproducibility of a stru
 
 ## Scope of this repository
 
-This repository is intended to document the computational workflow and processed analysis outputs used in the revised manuscript and response to reviewers. It includes receptor structures, docking configuration files, receptor PDBQT files, packaged docking logs, workflow scripts, MD analysis scripts, processed summary tables, MM/GBSA outputs, and publication-style figures.
+This repository is intended to document the computational workflow and processed analysis outputs used in the revised manuscript and response to reviewers. It includes predicted protein structures, receptor structures, docking configuration files, receptor PDBQT files, packaged docking logs, workflow scripts, MD analysis scripts, processed summary tables, MM/GBSA outputs, and publication-style figures.
 
 The repository should be interpreted as a reproducibility and transparency resource. It does **not** establish antiviral efficacy, cellular target engagement, clinical activity, or the therapeutic suitability of any compound.
 
@@ -27,6 +27,7 @@ The revised manuscript and this repository use the following cautious interpreta
    - The reported KD values are apparent steady-state estimates.
    - The highest analyte concentration used in the SPR assay was 100 µM. Therefore, compounds with fitted KD values above 100 µM should be interpreted cautiously as weak apparent binders rather than as precisely quantified high-confidence affinities.
    - The SPR results do not demonstrate antiviral activity, cellular target engagement, or therapeutic efficacy.
+   - Raw SPR sensorgrams are not part of this computational repository; the KD values cited below are those reported in the revised manuscript.
 
 3. **MD simulations**
    - MD simulations were used to examine post-docking structural relaxation, protein-ligand spatial association, protein-ligand contacts, hydrogen bonds, and global structural descriptors.
@@ -45,7 +46,7 @@ The revised manuscript and this repository use the following cautious interpreta
 
 ## Studied A35R-ligand systems
 
-| Internal ID | Compound | SPR interpretation | Apparent steady-state KD | Highest tested SPR concentration | MD replicates | Production length |
+| Internal ID | Compound | SPR interpretation | Apparent steady-state KD (as reported in the manuscript) | Highest tested SPR concentration | MD replicates | Production length |
 |---|---|---:|---:|---:|---:|---:|
 | `drugs2263` | Eltrombopag | Preliminary A35R-associated binder; fitted KD within tested concentration range | 60.7 µM | 100 µM | 3 | 100 ns each |
 | `drugs3003` | Cepharanthine | Weak preliminary A35R-associated binder; fitted KD exceeds tested concentration range | 436 µM | 100 µM | 3 | 100 ns each |
@@ -53,31 +54,35 @@ The revised manuscript and this repository use the following cautious interpreta
 
 These compounds should be described as **preliminary A35R-associated binders** or **preliminary A35R-binding hits**, not as optimized drug candidates. Their biological relevance remains to be tested by orthogonal binding assays and cell-based antiviral assays.
 
+The compound-ID mapping is also documented in `A35R-MMPBSA/README.md`. The MD system design (three independent 100 ns replicates per complex) is corroborated by the per-replicate directory structure under `A35R-GROMACS-MD/05_per_replicate_csv/` and by the production `.mdp` files under `A35R-GROMACS-MD/02_parameters/mdp/03_100ns_md_metadata/` (`nsteps = 50000000`, `dt = 0.002 ps`).
+
 ## Docking targets
 
 The `Docking/` directory contains receptor structures, AutoDock Vina configuration files, receptor PDBQT files, and packaged docking logs for seven MPXV targets.
 
 | Target | Receptor PDB | Receptor PDBQT | Vina config | Packaged logs |
 |---|---|---|---|---|
-| A20 | `Docking/PDB/A20.pdb` | `Docking/pdbqt/A20.pdbqt` | `Docking/config/configA20.txt` | `Docking/docking results/A20.zip` |
-| A29L | `Docking/PDB/A29L.pdb` | `Docking/pdbqt/A29L.pdbqt` | `Docking/config/configA29L.txt` | `Docking/docking results/A29L.zip` |
-| A30L | `Docking/PDB/A30L.pdb` | `Docking/pdbqt/A30L.pdbqt` | `Docking/config/configA30L.txt` | `Docking/docking results/A30L.zip` |
-| A35R | `Docking/PDB/A35R.pdb` | `Docking/pdbqt/A35R.pdbqt` | `Docking/config/configA35R.txt` | `Docking/docking results/A35R.zip` |
-| DNA polymerase | `Docking/PDB/DNApolymearse.pdb` | `Docking/pdbqt/DNA polymerase.pdbqt` | `Docking/config/configDNA_polymerase.txt` | `Docking/docking results/DNA polymerase.zip` |
-| E4R | `Docking/PDB/E4R.pdb` | `Docking/pdbqt/E4R.pdbqt` | `Docking/config/configE4R.txt` | `Docking/docking results/E4R.zip` |
-| E8L | `Docking/PDB/E8L.pdb` | `Docking/pdbqt/E8L.pdbqt` | `Docking/config/configE8L.txt` | `Docking/docking results/E8L.zip` |
+| A20 | `Docking/PDB/A20.pdb` | `Docking/pdbqt/A20.pdbqt` | `Docking/config/configA20.txt` | `Docking/docking_results/A20.zip` |
+| A29L | `Docking/PDB/A29L.pdb` | `Docking/pdbqt/A29L.pdbqt` | `Docking/config/configA29L.txt` | `Docking/docking_results/A29L.zip` |
+| A30L | `Docking/PDB/A30L.pdb` | `Docking/pdbqt/A30L.pdbqt` | `Docking/config/configA30L.txt` | `Docking/docking_results/A30L.zip` |
+| A35R | `Docking/PDB/A35R.pdb` | `Docking/pdbqt/A35R.pdbqt` | `Docking/config/configA35R.txt` | `Docking/docking_results/A35R.zip` |
+| DNA polymerase | `Docking/PDB/DNApolymearse.pdb` | `Docking/pdbqt/DNA polymerase.pdbqt` | `Docking/config/configDNA_polymerase.txt` | `Docking/docking_results/DNA polymerase.zip` |
+| E4R | `Docking/PDB/E4R.pdb` | `Docking/pdbqt/E4R.pdbqt` | `Docking/config/configE4R.txt` | `Docking/docking_results/E4R.zip` |
+| E8L | `Docking/PDB/E8L.pdb` | `Docking/pdbqt/E8L.pdbqt` | `Docking/config/configE8L.txt` | `Docking/docking_results/E8L.zip` |
+
+Note: the receptor file name `DNApolymearse.pdb` contains a historical spelling inconsistency and is preserved as archived (see `Docking/README.md`).
 
 ## Workflow overview
 
 ### 1. Structure prediction and confidence assessment
 
-Protein structures were predicted using AlphaFold-based workflows. For the revised manuscript, the monomer-PTM preset was used to generate predicted aligned error (PAE) information for the seven MPXV proteins.
+Protein structures were predicted using AlphaFold-based workflows. For the revised manuscript, the monomer-PTM preset was used to generate predicted aligned error (PAE) information for the seven MPXV proteins. A minimal command template is provided in `AlphaFold_PTM.sh`, and the seven predicted structures are archived under `Predicted-protein-structures/`.
 
 The PAE and pLDDT information was used to support model-confidence assessment. For A35R, comparison with the available experimental A35R structure was included in the revised manuscript. Nevertheless, side-chain-level pocket geometry remains uncertain for predicted structures, and docking results based on such models should be interpreted cautiously.
 
 ### 2. Ligand library and receptor preparation
 
-A total of 6,405 approved drugs were used for high-throughput screening. Ligands were prepared in AutoDock-compatible PDBQT format.
+A library of 6,405 approved drugs was used for high-throughput screening, as described in the manuscript. Each packaged docking archive contains one AutoDock Vina log file per ligand; the archives hold 6,405-6,406 log files per target with ligand IDs `drugs1`-`drugs6406`, which is consistent with the stated library size. Ligands were prepared in AutoDock-compatible PDBQT format.
 
 For the high-throughput docking stage:
 - no independent quantum-chemical charge derivation was performed;
@@ -96,7 +101,7 @@ For enzymatic targets such as DNA polymerase and E4R, DNA, Mg2+ ions, catalytic 
 
 ### 4. SPR binding assessment
 
-SPR was used to assess selected A35R-compound interactions. The revised manuscript reports apparent steady-state KD values for cepharanthine, eltrombopag, and simeprevir.
+SPR was used to assess selected A35R-compound interactions. The revised manuscript reports apparent steady-state KD values for cepharanthine, eltrombopag, and simeprevir (see the table above).
 
 Important interpretation notes:
 - The compounds showed measurable A35R-associated SPR responses under the tested conditions.
@@ -128,11 +133,11 @@ MD descriptors included:
 - protein-ligand contact counts;
 - hydrogen-bond analysis.
 
-The MD analyses support continued ligand association with A35R in the analyzed trajectories, but the simulations should not be overinterpreted as proof that the initial docking pose remains unchanged. Ligand RMSD and contact analyses should be interpreted together.
+The MD analyses support continued ligand association with A35R in the analyzed trajectories, but the simulations should not be overinterpreted as proof that the initial docking pose remains unchanged. Ligand RMSD and contact analyses should be interpreted together. See `A35R-GROMACS-MD/METHODS_MD.md` for the full methods description.
 
 ### 6. MM/GBSA analysis
 
-Binding free energies were estimated using gmx_MMPBSA from MD snapshots.
+Binding free energies were estimated using gmx_MMPBSA from MD snapshots (single-trajectory protocol; 50-100 ns window of each replicate, 500 ps sampling interval; `igb=5`, `saltcon=0.150` M; corrected run with `PBRadii=3` — see `A35R-MMPBSA/README.md` and `A35R-MMPBSA/REPRODUCIBILITY.md`).
 
 The MM/GBSA workflow was used to compare post-docking simulation-derived energetic trends among the three A35R-ligand complexes. Because entropy was not included, the calculated values should be interpreted as relative indicators rather than absolute binding free energies.
 
@@ -143,7 +148,17 @@ MPOX-JCAMD/
 |-- README.md
 |-- AlphaFold_PTM.sh             # Minimal AlphaFold monomer-PTM command template
 |-- autodock_vina.sh             # Minimal AutoDock Vina batch-docking template
+|-- Predicted-protein-structures/  # Seven AlphaFold-predicted MPXV protein structures (PDB)
 |-- Docking/                     # Docking receptors, configs, PDBQT files, and packaged Vina logs
+|   |-- PDB/                     # Receptor PDB files used for docking preparation
+|   |-- pdbqt/                   # Receptor PDBQT files used by AutoDock Vina
+|   |-- config/                  # Per-target AutoDock Vina search-space configuration files
+|   |-- docking grid configuration files/  # Archived copy of the per-target grid configurations
+|   |-- docking_results/         # One .zip archive per target containing Vina log files
+|   |-- compare_docking.py       # Docking result comparison helper script
+|   |-- extract_docking.py       # Docking log extraction helper script
+|   |-- find_stable.py           # Stable-pose identification helper script
+|   `-- README.md                # Docking data notes, target list, and archive layout
 |-- A35R-GROMACS-MD/             # GROMACS MD code, parameters, processed tables, and figures
 `-- A35R-MMPBSA/                 # gmx_MMPBSA workflow, processed outputs, and figures
 ```
@@ -154,11 +169,14 @@ MPOX-JCAMD/
 |---|---|
 | `AlphaFold_PTM.sh` | Minimal AlphaFold monomer-PTM command template. Local database/runtime paths must be supplied by the user. |
 | `autodock_vina.sh` | Minimal AutoDock Vina batch-docking template. Edit paths and configuration files before reuse. |
+| `Predicted-protein-structures/` | AlphaFold-predicted PDB structures for the seven MPXV targets (same target set as `Docking/PDB/`). |
 | `Docking/README.md` | Docking data notes, target list, and archive layout. |
 | `Docking/PDB/` | Receptor PDB files used for docking preparation. |
 | `Docking/pdbqt/` | Receptor PDBQT files used by AutoDock Vina. |
 | `Docking/config/` | Per-target AutoDock Vina search-space configuration files. |
-| `Docking/docking results/` | One `.zip` archive per target containing Vina log files for that target. |
+| `Docking/docking grid configuration files/` | Archived duplicate set of the per-target grid configuration files, preserved as organized in the working data. |
+| `Docking/docking_results/` | One `.zip` archive per target containing Vina log files for that target. |
+| `Docking/compare_docking.py`, `Docking/extract_docking.py`, `Docking/find_stable.py` | Helper scripts for extracting, comparing, and filtering docking results. |
 | `A35R-GROMACS-MD/README.md` | MD release notes, included/excluded file classes, and public manifest information. |
 | `A35R-GROMACS-MD/METHODS_MD.md` | GROMACS MD methods and analysis description. |
 | `A35R-GROMACS-MD/02_parameters/` | GROMACS `.mdp` files and AMBER-to-GROMACS conversion reports. |
@@ -178,7 +196,7 @@ MPOX-JCAMD/
 Clone the repository:
 
 ```bash
-git clone https://github.com/lg10is1/MPOX-JCAMD.git
+git clone https://github.com/<YOUR-USERNAME>/MPOX-JCAMD.git
 cd MPOX-JCAMD
 ```
 
@@ -201,7 +219,7 @@ The SLURM scripts are templates from an HPC workflow. Replace placeholders such 
 To inspect the packaged docking logs, extract the target archive of interest:
 
 ```bash
-cd "Docking/docking results"
+cd Docking/docking_results
 unzip A35R.zip -d A35R
 ```
 
@@ -209,23 +227,24 @@ The expanded docking log folders are ignored by Git to keep the public repositor
 
 ## Software used
 
-| Component | Version or note |
-|---|---|
-| AlphaFold | Monomer-PTM command template provided; local database/runtime paths must be supplied by the user |
-| AutoDock Vina | Batch-docking command template and per-target configs provided |
-| GROMACS | 2021.3-series runtime recorded in analysis logs |
-| gmx_MMPBSA | v1.5.6 |
-| AmberTools | Amber20 runtime tools recorded for MM/GBSA |
-| Python | 3.9-series runtime recorded for MM/GBSA workflow |
-| Python packages | `numpy`, `pandas`, `matplotlib`, `ParmEd` |
+| Component | Version or note | Supporting evidence in this repository |
+|---|---|---|
+| AlphaFold | Monomer-PTM command template provided; local database/runtime paths must be supplied by the user | `AlphaFold_PTM.sh` |
+| AutoDock Vina | Batch-docking command template and per-target configs provided | `autodock_vina.sh`, `Docking/config/` |
+| GROMACS | 2021.3-series runtime recorded for the archived simulations | `A35R-GROMACS-MD/METHODS_MD.md`, `A35R-MMPBSA/environment.yml` (`gromacs=2021.3`) |
+| gmx_MMPBSA | v1.5.6 | `A35R-MMPBSA/environment.yml` (`gmx_MMPBSA==1.5.6`), `A35R-MMPBSA/README.md` |
+| AmberTools | AmberTools20 runtime tools recorded for MM/GBSA | `A35R-MMPBSA/environment.yml` (`ambertools=20`) |
+| Python | 3.9-series runtime recorded for MM/GBSA workflow | `A35R-MMPBSA/environment.yml` (`python=3.9`) |
+| Python packages | `numpy`, `pandas`, `matplotlib`, `ParmEd` (3.4.3 at MM/GBSA runtime) | `A35R-MMPBSA/environment.yml` |
 
 ## Data availability notes
 
 ### Included
 
 - Sanitized workflow scripts and parameter files.
+- AlphaFold-predicted receptor structures (`Predicted-protein-structures/`).
 - Docking receptor PDB/PDBQT files and Vina configuration files.
-- Packaged docking log archives, with one `.zip` file per target under `Docking/docking results/`.
+- Packaged docking log archives, with one `.zip` file per target under `Docking/docking_results/`.
 - Processed docking score tables and analysis outputs where applicable.
 - Processed MD and MM/GBSA CSV summary tables.
 - Per-replicate MD analysis CSV exports.
@@ -237,10 +256,11 @@ The expanded docking log folders are ignored by Git to keep the public repositor
 - Raw MD trajectories (`*.xtc`, `*.trr`).
 - GROMACS binary run, checkpoint, and energy files (`*.tpr`, `*.cpt`, `*.edr`).
 - Full production logs and raw XVG files.
+- Raw SPR sensorgrams (experimental data outside the scope of this computational repository).
 - Large working directories and cluster-specific temporary files.
 - Expanded docking log folders, which can be recreated by extracting the target `.zip` archives.
 
-One processed table, `A35R-MMPBSA/results/figure_tables/md_all_timeseries_long.csv`, is approximately 62 MB. It is below GitHub's hard file-size limit but may be better handled with Git LFS if the repository grows.
+One processed table, `A35R-MMPBSA/results/figure_tables/md_all_timeseries_long.csv`, is approximately 62 MiB (about 65 MB). It is below GitHub's hard file-size limit but may be better handled with Git LFS if the repository grows.
 
 ## Interpretation notes for users
 

@@ -1,0 +1,8 @@
+receptor = A29L.pdbqt
+
+center_x = -9.633
+center_y = 2.062
+center_z = -4.481
+size_x = 87.85
+size_y = 87.85
+size_z = 87.85

@@ -1,0 +1,8 @@
+receptor = E4R.pdbqt
+
+center_x = 1.4
+center_y = 2.39
+center_z = 0.543
+size_x = 59.85
+size_y = 48.45
+size_z = 59.85

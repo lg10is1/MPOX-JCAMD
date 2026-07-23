@@ -1,0 +1,8 @@
+receptor = A35R.pdbqt
+
+center_x = -23.827
+center_y = -9.517
+center_z = 18.603
+size_x = 98.35
+size_y = 98.35
+size_z = 98.35

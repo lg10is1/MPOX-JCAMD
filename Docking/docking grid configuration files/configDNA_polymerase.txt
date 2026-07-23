@@ -1,0 +1,8 @@
+receptor =DNA polymerase.pdbqt
+
+center_x=-8.0
+center_y=0.0
+center_z=-2.0
+size_x=126
+size_y=126
+size_z=126
